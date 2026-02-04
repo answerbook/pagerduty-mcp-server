@@ -7,7 +7,7 @@ FROM python:3.12-slim AS builder
 WORKDIR /app
 
 # Install uv package manager
-RUN pip install --no-cache-dir uv==0.5.14
+RUN pip install --no-cache-dir uv
 
 # Copy dependency files and source code
 COPY pyproject.toml README.md ./
